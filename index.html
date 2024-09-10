@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget </title>
+    <link rel="stylesheet" href="./budget.css" />
+
+  
+
+    <!-- font awesome icon  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+
+     <!-- h1 heading link -->
+     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=neon|outline|emboss|shadow-multiple">
+          
+</head>
+<body>
+
+    <!-- https://www.youtube.com/watch?v=rxRHuk0f3gE&t=338s -->
+
+    <div class="back-ground">
+
+        <div  class="wrapper">
+
+            <h1 class="font-effect-shadow-multiple"
+             style="font-family: Sofia, sans-serif;">Budget</h1>
+
+            <div class="container">
+                
+                <div class="sub-container">
+                    <!-- 2 things -->
+                        <!--1.budget  -->
+                    <div class="total-budget-container">
+                         <h3>budget</h3>
+                         <p class="hide-error" id="budget-error">
+                            value cannot be empty / negative</p><br/>
+                         <input type="number" 
+                             placeholder="enter total amount"
+                               id="total-amount" />
+                         <button id="total-amount-button" >
+                            set budget</button>
+                    </div>
+
+                      <!--2.expenditure -->
+                    <div class="expenditure-container">
+                        <h3>expenses</h3>
+                        <p class="hide-error" id="reason-expense-error">
+                            value cannot be empty / negative</p> <br/>
+                        <input type="text"
+                           placeholder="reason of expenses"
+                           id="reason-expense" /> 
+                        <input type="number"
+                           placeholder="expense amount" 
+                           id="expense-amount"  /> 
+                        <button id="check-amount-button" >
+                            check amount
+                        </button>   
+                    </div>
+
+                </div>
+                <br/> <br/>
+
+                <!-- output -->
+                
+                <div class="output-container">
+                    <div>
+                        <p>total budget</p>
+                        <span id="amount">0</span>
+                    </div>
+                    <div>
+                        <p>expenses</p>
+                        <span id="expenditure-value">0</span>
+                    </div>
+                    <div>
+                        <p>balance</p>
+                        <span id="balance-amount">0</span>
+                    </div>
+                </div>
+
+
+            </div> 
+            <br/>
+            <br/>
+
+            <div class="list">
+                <h3>expense list</h3>
+                <div class="list-container" id="list">
+                </div>
+            </div>
+    
+                                 
+        </div>
+
+        <!-- list -->
+
+       
+        
+    </div>
+
+    <script src="./budget.js" ></script>
+    
+</body>
+</html>
